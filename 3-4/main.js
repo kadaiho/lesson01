@@ -1,1 +1,11 @@
-//pull test
+const arg1 = Number(process.argv[2]);
+const arg2 = Number(process.argv[3]);
+const str1 = String(arg1);
+const str2 = String(arg2);
+reverse1 = str1.split(``);
+reverse2 = str2.split(``);
+reverse1.reverse();
+reverse2.reverse();
+num1 = Number(reverse1.join(""));
+num2 = Number(reverse2.join(""));
+console.log(num1 + num2);
