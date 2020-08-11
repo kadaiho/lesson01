@@ -2,7 +2,7 @@ const arg1 = Number();
 const array = [];
 const num = [];
 for (let i = 2; i < process.argv.length; i++) {
-  const arg1 = Number(process.argv[i]);
+  const arg1 = process.argv[i];
   //console.log(arg1);
   array.push(arg1);
 }
