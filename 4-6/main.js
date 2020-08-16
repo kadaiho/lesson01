@@ -1,4 +1,4 @@
-const arg1 = String(process.argv[2]);
+const arg1 = process.argv[2];
 const minute = Number(arg1.split(`:`)[1]) + 45;
 const hour = Number(arg1.split(`:`)[0]) + Math.floor(minute / 60);
 console.log(hour % 24);
