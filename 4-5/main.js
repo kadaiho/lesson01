@@ -5,10 +5,10 @@ for (let i = 2; i < process.argv.length; i++) {
   //console.log(arg1);
   array.push(arg1);
 }
-var fewestArray = Math.min(...array);
+var minimumNumber = Math.min(...array);
 //console.log(num2);
 //console.log(array);
-for (let a = fewestArray; a < 9999; a++) {
+for (let a = minimumNumber; a < 9999; a++) {
   for (let j = 0; j < array.length; j++) {
     if (a === array[j]) {
       sortedArray.push(a);
