@@ -2,7 +2,7 @@ const json = require("./users.json");
 const users = json.users;
 //console.log(json.users[1].name);
 for (let i = 0; i < users.length; i++) {
-  if (`A` == users[i].rank) {
+  if (users[i].rank === `A`) {
     if (5 > users[i].years) {
       const ArankSarary = 3000 * users[i].years + 100000;
       users[i].sarary = ArankSarary;
@@ -10,10 +10,10 @@ for (let i = 0; i < users.length; i++) {
       const ArankSarary2 = 3000 * users[i].years + 120000;
       users[i].sarary = ArankSarary2;
     }
-  } else if (`B` == users[i].rank) {
+  } else if (users[i].rank === `B`) {
     const BrankSarary = 4000 * users[i].years + 140000;
     users[i].sarary = BrankSarary;
-  } else if (`C` == users[i].rank) {
+  } else {
     const CrankSarary = 5000 * users[i].years + 160000;
     users[i].sarary = CrankSarary;
   }
