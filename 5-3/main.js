@@ -2,7 +2,6 @@ const jsonPlayData = require(`./playdata.json`);
 const jsonSongs = require(`./songs.json`);
 const data = jsonPlayData.data;
 const songs = jsonSongs.songs;
-const array = [];
 
 data.sort(function (a, b) {
   return b.count - a.count;
